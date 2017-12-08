@@ -30,6 +30,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import www.wielabs.com.arc.R;
 
+import static www.wielabs.com.arc.activity.Registration.username;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("default", MODE_PRIVATE);
         SharedPreferences.Editor editor= preferences.edit();
         editor.putBoolean("isLoggedIn",true);
+        editor.putString("uname",username);
         editor.commit();
 
 

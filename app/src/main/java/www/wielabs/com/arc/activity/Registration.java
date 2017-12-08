@@ -27,8 +27,8 @@ public class Registration extends AppCompatActivity {
 
     NodeList nodelist;
     Button sign_in;
-
-    String username, firstname, lastname, password1, password2, country_id, email;
+    public static String username;
+    String  firstname, lastname, password1, password2, country_id, email;
     ProgressDialog pDialog;
 
     EditText username_view, firstname_view, lastname_view, password1_view, password2_view, country_id_view, email_view;

@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import www.wielabs.com.arc.activity.AccountKitLoginActivity;
+import www.wielabs.com.arc.activity.Login;
 import www.wielabs.com.arc.activity.MainActivity;
 import www.wielabs.com.arc.activity.Registration;
 
@@ -39,7 +40,7 @@ public class Splash extends AppCompatActivity {
                 startActivity(i);
                 } else {
 
-                    Intent i = new Intent(Splash.this, Registration.class);
+                    Intent i = new Intent(Splash.this, Login.class);
                                  startActivity(i);
                             }
 
