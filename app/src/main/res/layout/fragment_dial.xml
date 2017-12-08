@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.wielabs.com.arc.fragment.Dial">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/etmobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:hint="Mobile Number"
+        android:textAlignment="center"
+        android:inputType="phone"
+        android:textColor="@color/nhtext" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:text="Call"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

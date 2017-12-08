@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#DA353D</color>
+    <color name="colorPrimary">#DA353D</color>
+    <color name="colorAccent">#3A7BD5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#67f14b</color>
+
+    <color name="nhtext">#858585</color>
+    <color name="ptext">#ffffff</color>
+    <color name="stext">#1c1c1c</color>
+
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+
+</resources>

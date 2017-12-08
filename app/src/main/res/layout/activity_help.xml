@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.wielabs.com.arc.activity.Help">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+33 148352728"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mail Us"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info@arc-mobile.com"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Visit Us"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.arc-mobile.com"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+
+</LinearLayout>
