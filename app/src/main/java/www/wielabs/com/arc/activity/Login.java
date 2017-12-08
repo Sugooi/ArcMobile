@@ -42,7 +42,7 @@ import www.wielabs.com.arc.R;
 public class Login extends AppCompatActivity {
 
 
-    String url = "http://148.251.140.183/billing/api/user_details_get.php";
+    String url = "http://148.251.140.183//billing/api/user_login";
 
     String uname,pass;
     EditText username,password;
@@ -58,15 +58,12 @@ public class Login extends AppCompatActivity {
          username= (EditText) findViewById(R.id.log_username);
          password= (EditText) findViewById(R.id.log_password);
 
-        uname= username.getText().toString();
-        pass = password.getText().toString();
-
         login = (Button) findViewById(R.id.btn_login);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addtoserver();
+                checkserver();
             }
         });
 
@@ -80,8 +77,11 @@ public class Login extends AppCompatActivity {
 
     }
 
-    private void addtoserver() {
+    private void checkserver() {
 
+
+        uname= username.getText().toString();
+        pass = password.getText().toString();
 
 
 
@@ -101,8 +101,8 @@ public class Login extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("u", "admin");
-                params.put("username",uname);
+                params.put("u", uname);
+                params.put("p",pass);
 
                 return params;
             }
