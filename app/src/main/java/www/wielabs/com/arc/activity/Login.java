@@ -1,6 +1,7 @@
 package www.wielabs.com.arc.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -89,7 +90,16 @@ public class Login extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(Login.this, response, Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(Login.this, response, Toast.LENGTH_LONG).show();
+                        String res=response;
+                        if(res.contains("Successfully logged in"))
+                        {startActivity(new Intent(Login.this,MainActivity.class));
+                            Toast.makeText(getApplicationContext(),"Loggin Successfull",Toast.LENGTH_SHORT).show();
+                        }
+                        else
+                        {
+                            Toast.makeText(getApplicationContext(),"Check username and password",Toast.LENGTH_SHORT).show();
+                        }
                     }
                 },
                 new Response.ErrorListener() {

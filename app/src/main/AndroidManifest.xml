@@ -80,7 +80,8 @@
         <activity android:name=".activity.RecentCallDetails" />
         <activity android:name=".activity.Rates" />
         <activity android:name=".activity.Registration" />
-        <activity android:name=".activity.Login"></activity>
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.Profile"></activity>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import www.wielabs.com.arc.activity.AccountKitLoginActivity;
 import www.wielabs.com.arc.activity.Login;
 import www.wielabs.com.arc.activity.MainActivity;
+import www.wielabs.com.arc.activity.Profile;
 import www.wielabs.com.arc.activity.Registration;
 
 
@@ -35,8 +36,8 @@ public class Splash extends AppCompatActivity {
 
                 SharedPreferences preferences = getSharedPreferences("default", MODE_PRIVATE);
                 Boolean isLoggedIn = preferences.getBoolean("isLoggedIn",false);
-                if ("true".equals(isLoggedIn)) {
-                Intent i = new Intent(Splash.this, MainActivity.class);
+                if (isLoggedIn) {
+                Intent i = new Intent(Splash.this, Profile.class);
                 startActivity(i);
                 } else {
 

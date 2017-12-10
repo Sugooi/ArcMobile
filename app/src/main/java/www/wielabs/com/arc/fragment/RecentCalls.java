@@ -89,8 +89,6 @@ public class RecentCalls extends Fragment {
         new DownloadXML().execute(URL);
 
 
-
-
         return view;
     }
 
@@ -139,11 +137,6 @@ public class RecentCalls extends Fragment {
             for (int temp = 0; temp < nodelist.getLength(); temp++) {
                 Node nNode = nodelist.item(temp);
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-
-
-
-
-
 
                     Element eElement = (Element) nNode;
 
